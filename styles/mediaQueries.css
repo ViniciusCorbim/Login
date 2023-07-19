@@ -50,6 +50,10 @@
 }
 
 @media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, #5F2C82, #4B949A);
+    }
+
     main{
         width: 80vw;
         min-width: 950px;
