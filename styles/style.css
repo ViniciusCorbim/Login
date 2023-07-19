@@ -35,6 +35,8 @@ div#img{
     background-repeat: no-repeat;
     background-position: center;
 
+    border-bottom: solid 1px rgba(0, 0, 0, 0.322);
+
     height: 175px;
     border-radius: 20px 20px  0px 0px;
 }
@@ -103,19 +105,4 @@ a{
 
 a span.material-icons{
     vertical-align: middle;
-}
-
-@media screen and (hover: hover) {
-    a:hover{
-        background-color: #6CD3CF;
-    }
-
-    form div input:hover{
-        border: solid 2px #5F2C82;
-    }
-
-    input[type= "submit"]:hover{
-        cursor: pointer;
-        background-color: rgb(32, 109, 109);
-    }
 }
