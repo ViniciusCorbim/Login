@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (hover: hover) {
+    a:hover{
+        background-color: #8307ff54;
+    }
+
+    form input:hover, form input:focus, select:hover, select:focus{
+        border: solid 2px #6E06D4;
+        outline: none;
+    }
+
+    input[type= "submit"]:hover, input[type= "reset"]:hover{
+        cursor: pointer;
+        background-color: #3e0577;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(45deg,#EB4C13, #0B4D4D);
+    }
+
+    main{
+        width: 85vw;
+        min-width: 750px;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "personalData securityQuestions"
+                             "personalData securityQuestions";
+    }
+
+    fieldset.personalData{
+        grid-area: personalData;
+    }
+
+    fieldset.securityQuestions{
+        grid-area: securityQuestions;
+    }
+}

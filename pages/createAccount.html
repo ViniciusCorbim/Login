@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie uma Conta</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../styles/createAccount.css">
+    <link rel="stylesheet" href="../styles/MQ-createAcc.css">
+</head>
+<body>
+    <main>
+        <h1>Crie uma Conta</h1>
+        <form action="createAccount.php">
+            <fieldset class="personalData">
+                <legend>Dados Pessoais</legend>
+                <div class="name">
+                    <label for="i-name">Nome</label>
+                    <input type="text" name="name" id="i-name" maxlength="30" required>
+                </div>
+                <div class="date">
+                    <label for="i-date">Data de Nascimento</label>
+                    <input type="date" name="date" id="i-date" required>
+                </div>
+                <div class="email">
+                    <label for="i-email">E-mail</label>
+                    <input type="email" name="email" id="i-email" required>
+                </div>
+                <div class="tel">
+                    <label for="i-tel">Telefone (Opcional)</label>
+                    <input type="tel" name="tel" id="i-tel">
+                </div>
+
+                <div class="password">
+                    <label for="i-password">Senha</label>
+                    <input type="password" name="password" id="i-password" required><br>
+                    <label for="i-confirmPassword">Confirmar Senha</label>
+                    <input type="password" name="confirmPassword" id="i-confirmPassword" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="securityQuestions">
+                <legend>Perguntas de Segurança</legend>
+
+                <label for="i-question-1">Primeira Pergunta</label>
+                <select name="question-1" id="i-question-1" required>
+                    <option value="option-0"></option>
+                    <option value="option-1">Nome completo da sua mãe</option>
+                    <option value="option-2">Nome completo da sua pai</option>
+                    <option value="option-3">Nome completo do seu melhor amigo</option>
+                    <option value="option-4">Nome completo da sua primeira escola</option>
+                    <option value="option-5">Nome completo da sua cidade de origem</option>
+                    <option value="option-5">Sua comida favorita</option>
+                </select>
+               <label for="i-response-1">Resposta</label> 
+                <input type="text" name="response-1" id="i-response-1" required>
+
+                <label for="i-question-2">Segunda Pergunta</label>
+                <select name="question-2" id="i-question-2" required>
+                    <option value="option-0"></option>
+                    <option value="option-1">Nome completo da sua mãe</option>
+                    <option value="option-2">Nome completo da sua pai</option>
+                    <option value="option-3">Nome completo do seu melhor amigo</option>
+                    <option value="option-4">Nome completo da sua primeira escola</option>
+                    <option value="option-5">Nome completo da sua cidade de origem</option>
+                    <option value="option-5">Sua comida favorita</option>
+                </select>
+               <label for="i-response-2">Resposta</label> 
+                <input type="text" name="response-2" id="i-response-2" required>
+
+                <label for="i-question-3">Terceira Pergunta</label>
+                <select name="question-3" id="i-question-3" required>
+                    <option value="option-0"></option>
+                    <option value="option-1">Nome completo da sua mãe</option>
+                    <option value="option-2">Nome completo da sua pai</option>
+                    <option value="option-3">Nome completo do seu melhor amigo</option>
+                    <option value="option-4">Nome completo da sua primeira escola</option>
+                    <option value="option-5">Nome completo da sua cidade de origem</option>
+                    <option value="option-5">Sua comida favorita</option>
+                </select>
+               <label for="i-response-3">Resposta</label> 
+                <input type="text" name="i-response-3" id="i-response-3" required>
+            </fieldset>
+
+            <div class="btns">
+                <input type="submit" value="Criar Conta">
+                <input type="reset" value="Limpar Formulário">
+                <a href="../index.html">Já tenho uma Conta <span class="material-icons">account_circle</span></a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
